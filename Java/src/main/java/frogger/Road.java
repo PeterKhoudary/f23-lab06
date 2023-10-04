@@ -15,4 +15,13 @@ public class Road {
     public boolean[] getOccupied() {
         return this.occupied;
     }
+
+    public boolean isOccupied(int position) {
+            return occupied[position];
+    }
+
+    public boolean isOnRoad(int position) {
+        if (position < 0) return false;
+        return position < occupied.length;
+    }
 }
